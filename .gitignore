@@ -1,0 +1,17 @@
+[Aa]ssets/AssetStoreTools*
+[Bb]uild/
+[Ll]ibrary/
+[Ll]ocal[Cc]ache/
+[Ll]ogs/
+[Dd]ebug/
+[Uu]serSettings
+[Oo]bj/
+[Tt]emp/
+[Uu]nityGenerated/
+Recordings/
+
+.vs/
+
+*.sln
+*.csproj
+
