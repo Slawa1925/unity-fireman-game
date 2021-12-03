@@ -4,10 +4,10 @@ namespace Game
 {
     public class ZombieComponent : MonoBehaviour
     {
-        [SerializeField] private GameObject _aliveView;
+        /*[SerializeField] private GameObject _aliveView;
 
         [SerializeField] private GameObject _diedView;
-
+        */
         //[SerializeField] private float _speed = 5f;
 
         //[SerializeField] private Rigidbody _rigidbody;
@@ -17,7 +17,7 @@ namespace Game
         //private int _currentPoint = 0;
         //private Vector3 _initPosition;
 
-        private void Awake()
+        /*private void Awake()
         {
             //_initPosition = transform.position;
         }
@@ -25,7 +25,7 @@ namespace Game
         private void OnEnable()
         {
             SetState(true);
-        }
+        }*/
 
         /*private void Update()
         {
@@ -41,12 +41,12 @@ namespace Game
             }
         }*/
 
-        public void SetState(bool alive)
+        /*public void SetState(bool alive)
         {
             _aliveView.SetActive(alive);
             _diedView.SetActive(!alive);
         }
 
-        public bool IsAlive => _aliveView.activeInHierarchy;
+        public bool IsAlive => _aliveView.activeInHierarchy;*/
     }
 }

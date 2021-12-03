@@ -5,11 +5,12 @@ namespace Game
 {
     public class GameView : MonoBehaviour
     {
-        [SerializeField] private PlayerController _player;
+        [SerializeField] private Health _player;
         [SerializeField] private ZombieMap _zombieMap;
         
         [SerializeField] private GameObject _winBlock;
         [SerializeField] private GameObject _gameOverBlock;
+
 
         private void Update()
         {
@@ -19,13 +20,13 @@ namespace Game
                 return;
             }
 
-            if (_player.Hitpoints <= 0)
+            if (_player.HealthPoints <= 0)
             {
                 _gameOverBlock.SetActive(true);
                 return;
             }
-            
-            _player.Hitpoints -= Time.deltaTime;
+
+            //_player.TakeDamage(Time.deltaTime);
         }
     }
 }

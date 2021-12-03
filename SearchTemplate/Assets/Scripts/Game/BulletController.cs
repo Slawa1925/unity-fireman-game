@@ -33,11 +33,13 @@ namespace Game
 
 		private void OnCollisionEnter(Collision collision)
 		{
-			var zombie = collision.gameObject.GetComponentInParent<ZombieComponent>();
-			if(zombie != null)
+            //var zombie = collision.gameObject.GetComponentInParent<ZombieComponent>();
+            var zombie = collision.gameObject.GetComponent<Health>();
+
+            if (zombie != null)
 			{
 				Destroy(gameObject);
-				zombie.SetState(false);
+				zombie.TakeDamage(100);
 			}
 		}
 	}

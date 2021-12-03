@@ -9,11 +9,11 @@ namespace Game
         [SerializeField]
         private GameObject _root;
 
-        private List<ZombieComponent> _zombieComponents = new List<ZombieComponent>();
+        private List<ZombieController> _zombieComponents = new List<ZombieController>();
 
         private void Awake()
         {
-            _zombieComponents = _root.gameObject.GetComponentsInChildren<ZombieComponent>().ToList();
+            _zombieComponents = _root.gameObject.GetComponentsInChildren<ZombieController>().ToList();
         }
 
         public List<Vector3> AlivePositions() => _zombieComponents
